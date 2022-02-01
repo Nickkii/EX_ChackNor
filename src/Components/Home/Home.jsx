@@ -34,9 +34,9 @@ const Home = () => {
         </div>
       </div>
       {/* <Search /> */}
-      <div className="test">
+      {/* <div className="test">
         <CategoryJoke />
-      </div>
+      </div> */}
     </>
   );
 };

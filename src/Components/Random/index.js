@@ -1,2 +1,2 @@
-import Random from "./Random";
+import Random from "./JokeList";
 export default Random;

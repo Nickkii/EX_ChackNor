@@ -1,6 +1,5 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import listImg from "../IMG/img-list-block-favorite.png";
 import likeIMG from "../IMG/Vector.png";
 import link from "../IMG/link.png";
@@ -10,30 +9,14 @@ import Favorite from "../Favorite";
 
 export const Context = React.createContext();
 
-const Ramdom = () => {
-  const [state, setState] = useState({
-    joke: "",
-    id: "",
-    url: "",
-    categories: [],
-  });
+const JokeList = ({state}) => {
+ 
 
-  useEffect(() => {
-    fetchDate();
-  }, []);
+  // useEffect(() => {
+  //   fetchDate();
+  // }, []);
 
-  const fetchDate = async () => {
-    const result = await axios.get("https://api.chucknorris.io/jokes/random");
-    console.log(result);
-    setState({
-      ...state,
-      joke: result.data.value,
-      id: result.data.id,
-      url: result.data.url,
-      updated_at: result.data.updated_at,
-      categories: result.data.categories,
-    });
-  };
+ 
 
   const [isLiked, setIsLiked] = useState(
     localStorage.getItem(state.id) ? true : false
@@ -54,7 +37,9 @@ const Ramdom = () => {
     }
     // updateFavorites();
   };
-
+  if (!state.id) {
+    return null
+  }
   return (
     <>
       <div className="ramdomListJoke">
@@ -98,4 +83,4 @@ const Ramdom = () => {
     </>
   );
 };
-export default Ramdom;
+export default JokeList;
