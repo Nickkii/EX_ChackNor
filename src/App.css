@@ -1,11 +1,17 @@
 .App {
   text-align: center;
 }
-
+#root {
+  position: relative;
+  width: 1440px;
+  margin: 0 auto;
+  padding-left: 140px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +41,262 @@
   to {
     transform: rotate(360deg);
   }
+}
+.home {
+  display: flex;
+}
+.radioButtonBlock {
+  margin-top: 40px;
+}
+.RadioButton {
+  width: 152px;
+  height: 42px;
+  background: linear-gradient(90.55deg, #8ea7ff 0%, #7291ff 100%);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
+.RadioButton:hover {
+  background: linear-gradient(90.55deg, #7186cf 0%, #223370 100%);
+}
+.titleHeader {
+  margin-top: 78px;
+}
+.titleHeaderH2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+  width: 680px;
+  height: 44px;
+}
+.titleHeaderH3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 44px;
+  color: #333333;
+  width: 315px;
+  height: 44px;
+}
+.logo {
+  height: 28px;
+  left: 140px;
+  margin-top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+.mainBlockHome {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 349px;
+}
+.randomRadio,
+.categoriesRadio,
+.searchRadio {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#random,
+#categories,
+#search {
+  margin-right: 10px;
+}
+#randomRadio,
+#categoriesRadio,
+#searchRadio {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.randomRadioLabel,
+.categoriesRadioLabel,
+.searchRadioLabel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+.block {
+  display: flex;
+}
+.favoriteBlock {
+  width: 480px;
+  background: #f8f8f8;
+  padding: 40px;
+}
+.favoriteTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ababab;
+}
+.favoriteUnitBlock {
+  width: 400px;
+  background: #ffffff;
+  border: 1px solid #f8f8f8;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 47px 20px 20px 20px;
+  display: flex;
+}
+.favoriteUnitBlockId,
+.ramdomUnitBlockId {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ababab;
+  margin-bottom: 5px;
+}
+.favoriteUnitBlockJoke,
+.ramdomUnitBlockJoke {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+.favoriteUnitBlockUpfate,
+.ramdomUnitBlockUpdate {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ababab;
+  margin-top: 20px;
+}
+.favoriteUnitBlockImg,
+.ramdomUnitBlockImg {
+  margin-right: 20px;
+}
+.linkImg {
+  margin: 10px;
+}
+.ramdomUnitBlock {
+  width: 680px;
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 47px 20px 20px 20px;
+  display: flex;
+  margin-top: 40px;
+}
+.categoryItem {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ababab;
+  border: 2px solid #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 5px 10px;
+  padding: 5px 15px;
+}
+.categoryList {
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.categoryItem:hover {
+  background: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  color: #333333;
+}
+.searchInput {
+  width: 680px;
+  height: 42px;
+  border: 2px solid #f8f8f8;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+.searchInput [placeholder] {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ababab;
+}
+.searchInput:hover {
+  border: 2px solid #333333;
+}
+.formRadioButton {
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+}
+.formRadioButtonInput {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.ramdomCategory {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 107px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 6px 20px;
+  margin-top: 23px;
+  text-align: center;
+}
+.ramdomUnitBlockUpdateANDCategory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonLike {
+  border: none;
+  background: transparent;
+}
+
+@media only screen and (max-width: 567px) {
+  .mainBlockHome,
+  .titleHeader,
+  .titleHeaderH2,
+  .titleHeaderH3,
+  #root,
+  .ramdomUnitBlock,
+  .searchInput {
+    width: 100%;
+  }
+  .block {
+    flex-direction: column;
+  }
+  #root {
+    padding-left: 20px;
+  }
+}
+.test {
+  margin-top: 390px;
+  border: 1px solid red;
+  width: 800px;
+}
+.categoryItemActive:active {
+  color: #01a715;
 }
